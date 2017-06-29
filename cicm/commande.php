@@ -166,7 +166,7 @@
                     <th class="cacher">Actions</th>
                 </tr>
                 </thead>
-                <tbody class="commande">
+                <tbody>
 	                
            		</tbody>
           </table>

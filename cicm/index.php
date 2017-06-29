@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/custom.css" />
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/ajax.js" ></script>
 </head>
 <body>
   
@@ -21,11 +20,7 @@
         
     </a>
 </nav>
-
-
-
 <!-- Fin Bar entete -->
-
 
 <div class="container spacer">
 
@@ -109,25 +104,8 @@
                         </tbody>
                 </table>
             </div>
-            <div class="  col-lg-9">
+            <div class="col-lg-9">
                 <table class="table table-bordered table-striped">
-                    <thead class="bg-warning">
-                    <tr style="color: #ffffff" >
-                        <th style="text-align:center">CNI</th>
-                        <th>Noms</th>
-                        <th>Contact</th>
-                        <th>Email</th>
-                        <th>Véhicule</th>
-                    </tr>
-                    </thead>
-
-                    <tbody class="utilisateurs" >
-
-
-                    </tbody>
-                    </table>
-
-              <!--  <table class="table table-bordered table-striped">
                     <thead class="bg-warning">
                     <tr style="color: #ffffff" >
                         <th style="text-align:center">X</th>
@@ -179,7 +157,7 @@
 
                    
                     </tbody>
-                </table> -->
+                </table>
             </div>
 
 
@@ -210,7 +188,7 @@
   <!--fin bloc pagination -->
 
 </div>
-<div class="modal fade" id="fideliserModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="fideliserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header bg-info">
@@ -220,73 +198,62 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="resultat" >
-                </div>
-
-                <form method="post" class="formulaire" enctype="multipart/form-data">
+                <form>
                     <div class="form-group row ">
                         <label class="col-2 col-form-label">CNI</label>
                         <div class="col-sm-10">
-                            <input class=" cni form-control" type="text" value="" PLACEHOLDER="CNI" >
+                            <input class="form-control" type="text" value="" PLACEHOLDER="CNI" >
                         </div>
                     </div>
 
                     <div class="form-group row ">
                         <label  class="col-2 col-form-label">Noms</label>
                         <div class="col-sm-10">
-                            <input class=" nom form-control" type="text" value="" PLACEHOLDER="noms et prenoms" >
-                        </div>
-                    </div>
-                    <div class="form-group row ">
-                        <label  class="col-2 col-form-label">Contact</label>
-                        <div class="col-sm-10">
-                            <input class="contact form-control" type="text" value="695492561" PLACEHOLDER="695492561" >
+                            <input class="form-control" type="text" value="" PLACEHOLDER="noms et prenoms" >
                         </div>
                     </div>
 
-                    <div class="form-group row ">
-                        <label  class="col-2 col-form-label">Sexe</label>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
-                            <input class="sexe form-control" type="text" value="" PLACEHOLDER="M" >
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                         </div>
                     </div>
-                    <div class="form-group row ">
-                        <label  class="col-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                            <input class="email form-control" type="email" value="" PLACEHOLDER="tona@sihouse.cm" >
-                        </div>
-                    </div>
-
+                     <div>
+                        <label class="spacerRight">sexe :</label>   
+                        <input style="margin-right: 6px;" type="radio" class="spacerRight" aria-label="">M
+                        <input style="margin-left: 34px;" type="radio" aria-label=""> F
+                     </div>
                      <div class="row">
                         <fieldset class="form-control">
                             <legend class="form-control bg-warning">Véhicules</legend>    
-                            <label for="inputEmail3" class="  col-sm-2 col-form-label">Immatriculation</label>
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Immatriculation</label>
                             <div class="col-sm-10">
-                                <input type="text" class="matr form-control" id="inputEmail3" >
+                                <input type="text" class="form-control" id="inputEmail3" >
                             </div>
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Modèle</label>
                             <div class="col-sm-10">
-                                <input type="text" class="modele form-control" id="inputEmail3">
+                                <input type="text²" class="form-control" id="inputEmail3">
                             </div>
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Marque</label>
                             <div class="col-sm-10">
-                                <input type="text" class=" marque form-control" id="inputEmail3" >
+                                <input type="text" class="form-control" id="inputEmail3" >
                             </div>
                         </fieldset>
                      </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Annuler</button>
-                        <button type="submit" class="btn btn-primary"    >Fideliser</button>
-                    </div>
+                    
                 </form>
             </div>
-
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary">Fideliser</button>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-    $('#fideliserModal').on('show.bs.modal', function (event) {
+    $('#exampleModal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget) // Button that triggered the modal
         var recipient = button.data('whatever') // Extract info from data-* attributes
         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).

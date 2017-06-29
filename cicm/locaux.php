@@ -103,6 +103,7 @@
     <table id="chambres" class="table table-bordered table-striped">
       <thead class="bg-info">
         <tr>
+          <th>#</th>
           <th >Code Chambre</th>
           <th>Standing</th>
           <th>Prix</th>
@@ -112,7 +113,130 @@
           <th>Occupant</th>
         </tr>
       </thead>
-      <tbody class="chambres">
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td data-toggle="modal" data-target="#alertBusyModal" data-whatever="@mdo"><u>CA1</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><span status-shortcode="busy" style="color:red">Occupé</span></td>
+          <td>11/05/2017</td>
+          <td>23jours</td>
+          <td>Rodrigue Cheumadjeu</td>
+          
+          
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td data-toggle="modal" data-target="#alertBusyModal" data-whatever="@mdo"><u>CA2</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><span status-shortcode="busy" style="color:red">Occupé</span></td>
+          <td>10/05/2017</td>
+          <td>37 jours</td>
+          <td>Alain Tona</td>
+          
+          
+        </tr>
+
+        <tr>
+          <th scope="row">3</th>
+          <td  data-toggle='modal' data-target='#reservationModal' data-whatever='@mdo'> <u>CA3</u></td>
+          <td>3*</td>
+          <td>80000</td>
+          <td><b><span status-shortcode="free" style="color:green">Libre</span></b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+          
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td data-toggle="modal" data-target="#alertUnAvailableModal" data-whatever="@mdo"><u>CA4</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><span status-shortcode="unavailable" style="color:#039">Indisponible</span></td>
+          <td>25/05/2017</td>
+          <td>Travaux </td>
+          <td>CICM</td>
+          
+          
+        </tr>
+         <tr>
+          <th scope="row">2</th>
+          <td data-toggle="modal" data-target="#alertBusyModal" data-whatever="@mdo"><u>CA2</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><span status-shortcode="busy" style="color:red">Occupé</span></td>
+          <td>10/05/2017</td>
+          <td>37 jours</td>
+          <td>Alain Tona</td>
+          
+          
+        </tr>
+
+        <tr>
+          <th scope="row">3</th>
+          <td  data-toggle='modal' data-target='#reservationModal' data-whatever='@mdo'> <u>CA3</u></td>
+          <td>3*</td>
+          <td>80000</td>
+          <td><b><span status-shortcode="free" style="color:green">Libre</span></b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+          
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td data-toggle="modal" data-target="#alertUnAvailableModal" data-whatever="@mdo"><u>CA4</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><span status-shortcode="unavailable" style="color:#039">Indisponible</span></td>
+          <td>25/05/2017</td>
+          <td>Travaux </td>
+          <td>CICM</td>
+          
+          
+        </tr>
+ <tr>
+          <th scope="row">2</th>
+          <td data-toggle="modal" data-target="#alertBusyModal" data-whatever="@mdo"><u>CA2</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><span status-shortcode="busy" style="color:red">Occupé</span></td>
+          <td>10/05/2017</td>
+          <td>37 jours</td>
+          <td>Alain Tona</td>
+          
+          
+        </tr>
+
+        <tr>
+          <th scope="row">3</th>
+          <td  data-toggle='modal' data-target='#reservationModal' data-whatever='@mdo'> <u>CA3</u></td>
+          <td>3*</td>
+          <td>80000</td>
+          <td><b><span status-shortcode="free" style="color:green">Libre</span></b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+          
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td data-toggle="modal" data-target="#alertUnAvailableModal" data-whatever="@mdo"><u>CA4</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><span status-shortcode="unavailable" style="color:#039">Indisponible</span></td>
+          <td>25/05/2017</td>
+          <td>Travaux </td>
+          <td>CICM</td>
+          
+          
+        </tr>
 
 
       </tbody>
@@ -125,6 +249,7 @@
     <table id="salles" class="table table-bordered table-striped">
       <thead class="bg-info">
         <tr>
+          <th>#	</th> 	
           <th>Code Salle</th>
           <th>Standing</th>
           <th>Prix</th>
@@ -134,8 +259,43 @@
           <th>Occupant</th>
         </tr>
       </thead>
-      <tbody class="salles">
-
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td data-toggle="modal" data-target="#alertBusySalleModal" data-whatever="@mdo"><u>SA1</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><span status-shortcode="unavailable" style="color:#039">Indisponible</span></td>
+          <td>25/05/2017</td>
+          <td>Travaux</td>
+          <td>CICM</td>
+          
+          
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td data-toggle="modal" data-target="#reservationSalleModal" data-whatever="@mdo"><u>SA1</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><b><span status-shortcode="free" style="color:green">Libre</span></b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+          
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td data-toggle="modal" data-target="#reservationSalleModal" data-whatever="@mdo"><u>SA1</u></td>
+          <td>2*</td>
+          <td>80000</td>
+          <td><b><span status-shortcode="free" style="color:green">Libre</span></b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+          
+        </tr>
         
       </tbody>
     </table>
@@ -176,7 +336,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="background:rgba(15,24,65,0.7)">
-                    <span class="modal-title" style="color: #fff;" id="reservationModalLabel">Réservation d'un local</span>
+                    <span class="modal-title" style="color: #fff;" id="reservationModalLabel">Réservation de chambre</span>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -187,7 +347,7 @@
                         <div class="form-group">
                             <label class="col-form-label">Confirmez votre CNI</label>
                             <div>
-                                <input class="form-control" type="number" value="" PLACEHOLDER="000000000" >
+                                <input class="form-control" type="date" value="" PLACEHOLDER="000000000" >
                             </div>
                         </div>
                         
@@ -228,7 +388,7 @@
                         <div class="form-group">
                             <label class="col-form-label">Confirmez votre CNI</label>
                             <div>
-                                <input class="form-control" type="number" value="" PLACEHOLDER="000000000" >
+                                <input class="form-control" type="date" value="" PLACEHOLDER="000000000" >
                             </div>
                         </div>
                         
@@ -245,13 +405,12 @@
                                 <input class="form-control" id="datepicker2" type="date" value="" PLACEHOLDER="jj/mm/aaaa" >
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                            <button type="button" class="btn btn-primary">Réserver</button>
-                        </div>
                     </form>
                 </div>
-
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Annuler</button>
+                    <button type="button" class="btn btn-primary">Réserver</button>
+                </div>
             </div>
         </div>
     </div>
@@ -290,7 +449,6 @@
   </script>
   <script type="text/javascript" src="js/SIHajaxing.js"></script>
   <script type="text/javascript" src="js/SIHmainJs.js"></script>
-  <script type="text/javascript" src="js/ajaxLocaux.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
   
