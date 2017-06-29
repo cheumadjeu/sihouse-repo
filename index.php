@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Edition du titre : Maison C.I.C.M </title>
+    <title>Maison C.I.C.M </title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
